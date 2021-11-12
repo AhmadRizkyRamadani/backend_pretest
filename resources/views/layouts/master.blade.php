@@ -22,6 +22,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/plugins/toastr/toastr.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/plugins/flatpickr/flatpickr.css')}}">
+  <link rel="stylesheet" href="{{asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <style>
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
@@ -147,11 +148,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li> -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="{{url('logout')}}" role="button" title="Logout" data-toggle="tooltip">
-          <i class="fas fa-sign-out-alt"></i>
-        </a>
-      </li> -->
+      <li class="nav-item">
+      <a class="nav-link" href="{{url('logout')}}" role="button" title="Logout" data-toggle="tooltip">
+        <i class="fas fa-sign-out-alt"></i>
+      </a>
+    </li>
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -196,6 +197,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <i class="nav-icon fas fa-sticky-note"></i> 
               <p> Logic Test</p>
             </a>
+          </li>
+          <li class="nav-item menu-is-opening menu-open">
+            <a href="#" class="nav-link">
+            <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></i>
+              <p>
+                User Transaction
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: block;">
+              <li class="nav-item">
+                <a href="/product" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Transaction Report</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/product" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Product</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/invoice" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/bill" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Bill</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/bill/pay" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pay Bill</p>
+                </a>
+              </li>
+            </ul>
           </li>
           
         </ul>

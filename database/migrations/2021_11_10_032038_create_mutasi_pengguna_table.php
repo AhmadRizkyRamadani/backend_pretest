@@ -14,13 +14,14 @@ class CreateMutasiPenggunaTable extends Migration
     public function up()
     {
         Schema::create('mutasi_pengguna', function (Blueprint $table) {
-            $table->string("kode_mutasi")->primary();
+            $table->string("kode_mutasi");
             $table->string("user_sender");
             $table->string("user_receiver");
             $table->bigInteger("nominal");
             $table->string("type", 20);
             $table->text("keterangan");
             $table->string("status", 10);
+            $table->string("in_out", 10);
             $table->timestamps();
         });
     }
